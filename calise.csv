@@ -2,3 +2,8 @@ SELECT * INTO OUTFILE '/home/codio/workspace/calise.csv'
 FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 FROM Orders;
+
+# Load data to infile in MYSQL 
+LOAD DATA INFILE '/home/josh/Orders.csv'               # path to the command 
+INTO TABLE Orders 
+FIELDS TERMINATED BY ',';
